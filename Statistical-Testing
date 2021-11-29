@@ -32,7 +32,7 @@ plotIt()
 ggplot(NULL, aes(x=x, colour = distribution)) + 
      stat_function(fun=dnorm, data = data.frame(x = c(-6,6), distribution = factor(1))) + 
      stat_function(fun=dt, args = list( df = 20), data = data.frame(x = c(-6,6), distribution = factor(2)), linetype = "dashed") + 
-     scale_colour_manual(values = c("blue","red"), labels = c("Normal","T-Distribution"))
+     scale_colour_manual(values = c("blue","red"), labels = c("Normal","T-Distribution")) 
      
 ### New Set ###
 
